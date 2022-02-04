@@ -91,7 +91,7 @@ const ProjectUsage: FC<Props> = ({ project }) => {
               </Dropdown.RadioGroup>
             }
           >
-            <Button type="text" iconRight={<IconChevronDown />}>
+            <Button as="span" type="text" iconRight={<IconChevronDown />}>
               {selectedInterval.label}
             </Button>
           </Dropdown>
