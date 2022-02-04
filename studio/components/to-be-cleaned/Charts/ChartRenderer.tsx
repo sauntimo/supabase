@@ -179,7 +179,7 @@ export function BarChart({
       <div style={{ width: '100%', height: '160px' }}>
         {hasData ? (
           <>
-            <ResponsiveContainer>
+            <ResponsiveContainer width='100%' height={160}>
               <RechartBarChart
                 data={data}
                 margin={{
@@ -303,7 +303,7 @@ export function AreaChart({
       >
         {hasData ? (
           <>
-            <ResponsiveContainer>
+            <ResponsiveContainer width='100%' height={160}>
               <RechartAreaChart
                 data={data}
                 margin={{
