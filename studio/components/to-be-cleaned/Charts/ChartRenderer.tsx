@@ -174,7 +174,7 @@ export function BarChart({
   label,
   onBarClick,
   minimalHeader,
-  minmalChart,
+  minimalChart,
   className = '',
 }: any) {
   const hasData = data ? dataCheck(data, attribute) : true
@@ -213,7 +213,7 @@ export function BarChart({
           customDateFormat={customDateFormat}
           displayDateInUtc={displayDateInUtc}
         />
-        <div style={{ width: '100%', height: minmalChart ? '96px' : '160px' }}>
+        <div style={{ width: '100%', height: minimalChart ? '96px' : '160px' }}>
           {hasData ? (
             <>
               <ResponsiveContainer width='100%' height={160}>
@@ -287,6 +287,7 @@ export function BarChart({
                       />
                     ))}
                   </Bar>
+                </Bar>
                 </RechartBarChart>
               </ResponsiveContainer>
               {data && (
