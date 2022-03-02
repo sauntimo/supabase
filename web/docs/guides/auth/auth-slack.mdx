@@ -54,17 +54,23 @@ Under `Create an app...`:
 - Select your `Slack Workspace`
 - Click `Create App`
 
-Under `App Credentials`:
+Under `Basic Information > App Credentials`:
 
 - Copy and save your newly-generated `Client ID`
 - Copy and save your newly-generated `Client Secret`
 - Click `Permissions`
 
-Under `Redirect URLs`:
+Under `OAuth & Permissions > Redirect URLs`:
 
 - Click `Add New Redirect URL`
 - Paste your `Callback URL` then click `Add`
 - Click `Save URLs`
+
+Under `OAuth & Permissions > Scopes > User Token Scopes`
+
+Sign in with Slack requires three User Scope Tokens as explained in [the documentation](https://api.slack.com/authentication/sign-in-with-slack#implementation). These scopes are requested by default by the [GoTrue slack provider](https://github.com/supabase/gotrue/blob/master/api/provider/slack.go).
+
+- Click `Add an OAuth Scope` and add `openid`, `profile` and `email`
 
 ### Enter your Slack credentials into your Supabase Project
 
